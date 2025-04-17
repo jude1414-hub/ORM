@@ -24,6 +24,10 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ``` 
+Developed By : Jude Clement Jose G
+Register No; 212224230109
+``` 
+``` 
 models.py
 from django.db import models
 from django.contrib import admin
