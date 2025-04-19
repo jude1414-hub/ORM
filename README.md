@@ -24,26 +24,26 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ``` 
-Developed By : Jude Clement Jose G
-Register No; 212224230109
-``` 
-``` 
+admin.py
+
+from django.contrib import admin
+from .models import Movies,MoviesAdmin
+admin.site.register(Movies, MoviesAdmin)
+
 models.py
+
 from django.db import models
 from django.contrib import admin
-class Movie(models.Model):
-	Movie_name=models.CharField(max_length=50)
-	Ratings=models.FloatField(primary_key="Ratings")
-	Cast=models.CharField(max_length=50)
-	Release_year=models.DateField()
-	Genre=models.CharField(max_length=50)
-class MovieAdmin(admin.ModelAdmin):
-	list_display=('Movie_name','Ratings','Cast','Release_year','Genre')
-
-admin.py
-from django.contrib import admin
-from .models import Movie,MovieAdmin
-admin.site.register(Movie,MovieAdmin)
+class Movies(models.Model):
+    person_id= models.CharField(max_length=20, help_text="User ID")
+    name= models.CharField(max_length=100)
+    person_email= models.EmailField()
+    seats= models.IntegerField()
+    Movie_Name=models.CharField(max_length=20)
+    Show_Date=models.DateTimeField()
+    Phone_Number=models.CharField(max_length=10, help_text="Phone number")
+class MoviesAdmin(admin.ModelAdmin):
+    list_display = ('person_id', 'name', 'person_email', 'seats', 'Movie_Name','Show_Date','Phone_Number')
 ```
 
 
