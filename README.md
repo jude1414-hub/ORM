@@ -49,7 +49,7 @@ class MoviesAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-![alt text](image-2.png)
+![Screenshot 2025-04-19 102210](https://github.com/user-attachments/assets/969182ca-7724-4184-b15e-e2377996132f)
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
