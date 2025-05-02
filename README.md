@@ -25,6 +25,7 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 ~~~
 models.py
+
 from django.db import models
 from django.contrib import admin
 
@@ -37,19 +38,16 @@ class Movies(models.Model):
 class MoviesAdmin(admin.ModelAdmin):
     list_display=('title','year','rating','genre')
 
-views.py
-from django.shortcuts import render
+admins.py
 
-from django.http import HttpResponse
-
-def home(request):
-    return render(request,'web4.html')
+from django.contrib import admin
+from .models import Movies,MoviesAdmin
+admin.site.register(Movies,MoviesAdmin)
 ~~~
 ## OUTPUT
 
 Include the screenshot of your admin page.
-![alt text](<Screenshot 2025-05-02 101158.png>)
-![alt text](<Screenshot 2025-05-02 101142.png>)
+![alt text](<Screenshot 2025-05-02 180114.png>)
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
