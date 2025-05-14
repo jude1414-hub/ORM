@@ -48,6 +48,7 @@ admin.site.register(Movies,MoviesAdmin)
 ## OUTPUT
 
 Include the screenshot of your admin page.
+![alt text](<Screenshot (14).png>)
 ![alt text](<Screenshot 2025-05-02 180114.png>)
 
 ## RESULT
